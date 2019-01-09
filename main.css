@@ -1,0 +1,19 @@
+/* ==== BASIC DESIGN ==== */
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+h1, h2, h3 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+/* ==== HEADER LAYOUT ==== */
+
+.navbar-inverse {
+  background-color: #4c4c4c;
+}
+
+.header-top {
+  padding-top: 1.5rem;
+}
