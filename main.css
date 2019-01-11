@@ -1,12 +1,46 @@
 /* ==== BASIC DESIGN ==== */
 
-body {
+html, body, container, row {
   font-family: "Merriweather", serif;
-}
+  font-size: 100%;
+} 
 
 h1, h2, h3 {
   font-family: "Fira Sans", sans-serif;
+  text-align: center;
 }
+
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ol, ul {
+  padding: 0 .625rem .625rem;
+}
+
+.btn {
+  display: table;
+  margin: 0 auto 1.5rem;
+}
+
+.btn-lg {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn-info {
+  background-color: hsl(24,100%,50%);
+  border-color: hsl(12,100%,50%);
+}
+
+
+
+
+
+
 
 /* ==== HEADER LAYOUT ==== */
 
@@ -15,5 +49,147 @@ h1, h2, h3 {
 }
 
 .header-top {
-  padding-top: 1.5rem;
+  padding-top: 2.0rem;
+}
+
+.logo img {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 1.5rem; 
+}
+
+address {
+  margin-bottom: 0.7rem;
+}
+
+.contact-data {
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-data {
+    text-align: right;
+  }
+}
+ 
+.contact-data a:hover {
+  color: #009cd9;
+  text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #009cd9;
+}
+
+.navbar-inverse .navbar-nav>li>a, .contact-data a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #ccc;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: #009cd9;
+}
+
+.navbar-nav .navbar-right a {
+  display: block;
+  padding: 0.6875rem 1.0714rem;
+}
+
+/* ==== CONTENT LAYOUT ==== */
+
+/* ==== jumbotron layout ==== */
+
+.container .jumbotron {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: hsla(24,100%,50%,.3);
+}
+
+@media screen and (min-width: 768px) {
+  .container .jumbotron {
+    padding-right: 2.8571rem;
+    padding-left: 2.8571rem;
+  }
+}
+
+.jumbotron h1 {
+  margin-top: 0.625rem;
+}
+
+/* ==== paragraph layout ==== */
+
+main {
+  font-size: 1.125rem;
+}
+
+/* ==== question block layout ==== */
+
+.ebook-questions span {
+  color: hsl(24,100%,50%);
+}
+
+.ebook-question {
+  display: block;
+  padding-left: .6875rem;
+  padding-right: .6875rem;
+}
+
+.ebook-questions li::after {
+  display: block;
+  content: "";
+  background-color: hsl(24,100%,50%);
+  height: 1px;
+  width: 20%;
+  margin: 0.625rem auto; 
+}
+
+/* ==== packages layout ==== */
+
+.table-responsive {
+  margin-bottom: 2.0rem;
+}
+
+.packages h2 {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.packages span {
+  color: hsla(197,100%,43%,1);
+}
+
+.table>thead>tr>th.info {
+    background-color: hsla(197,100%,43%,1);
+}
+
+.info h3 {
+  margin-top: .625rem;
+  color: #fff;
+}
+
+/* ==== footer layout ==== */
+
+footer .container-fluid {
+  background-color: #4c4c4c;
+}
+
+.footer-link {
+  padding-top: .625rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer-link li a {
+  color: white;
+}
+
+.footer-link li a:hover {
+  color: hsla(197,100%,43%,1);
 }
